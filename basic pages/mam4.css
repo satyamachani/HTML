@@ -1,0 +1,16 @@
+UNKNOWN
+{
+    BACKGROUND-COLOR: red
+}
+H1
+{
+    COLOR: orange;
+    FONT-STYLE: italic;
+    BACKGROUND-COLOR: blue;
+    TEXT-ALIGN: center;
+    FONT-VARIANT: small-caps
+}
+P
+{
+    FONT-FAMILY: "comic sans MS" font-size:20px
+}

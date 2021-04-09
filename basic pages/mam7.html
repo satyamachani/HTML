@@ -1,0 +1,43 @@
+<HTML>
+<head>
+<script type="text/javascript">
+function ispalindrome()
+{
+var num=document.frm.text1.value;
+if(num=="")
+{
+alert("please enter the number");}
+else
+{
+var digit;
+var rev=0;
+var n=num;
+while(num!=0)
+{
+digit=num%10;
+rev=(rev*10)+digit;
+num=num/10;
+num=parseInt(num);
+}
+if(n==rev)
+alert("Integer is palindrom");
+else
+alert("integer is not palindrom");
+document.frm.text1.value="";
+}
+}
+</script>
+</head>
+<body>
+<form name="frm">
+<h1 align="center">TO CHECK WHETHER A NUMBER IS POLINDROME OR NOT </h1>
+<hr color="red">
+<center>
+Enter a number:
+<input type="text" name="text1"><br><br>
+<input type="button" value="check palindrom" onClick="ispalindrome()">
+</center>
+</form>
+</body>
+</html>
+

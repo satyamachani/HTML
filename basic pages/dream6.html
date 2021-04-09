@@ -1,0 +1,80 @@
+<script language="VBS">
+
+dim name,rno,dob,m1,m2,m3,m4,m5,m6,tot,avg
+
+name=prompt("Enter student name"," ")
+rno=prompt("Enter student rollno",000)
+dob=prompt("Enter date of birth "," ")
+m1=prompt("Enter student english marks",000)
+m2=prompt("Enter student telugu marks",000)
+m3=prompt("Enter student maths marks",000)
+m4=prompt("Enter student science marks",000)
+m5=prompt("Enter student social marks",000)
+m6=prompt("Enter student hindi marks",000)
+
+tot=(int(m1)+int(m2)+int(m3)+int(m4)+int(m5)+int(m6))
+avg=(int(tot)/6)
+
+document.write("The student Name is : ")
+document.write(name)
+	document.write("<br>")
+	document.write("<br>")
+document.write("The student Roll no is : ")
+document.write(rno)
+	document.write("<br>")
+	document.write("<br>")
+document.write("The Date of Birth is : ")
+document.write(dob)
+	document.write("<br>")
+	document.write("<br>")
+document.write("English marks : ")
+document.write(m1)
+	document.write("<br>")
+	document.write("<br>")
+document.write("Telugu marks : ")
+document.write(m2)
+	document.write("<br>")
+	document.write("<br>")
+document.write("Maths marks : ")
+document.write(m3)
+	document.write("<br>")
+	document.write("<br>")
+document.write("Science marks : ")
+document.write(m4)
+	document.write("<br>")
+	document.write("<br>")
+document.write("Social marks : ")
+document.write(m5)
+	document.write("<br>")
+	document.write("<br>")
+document.write("Hindi marks :")
+document.write(m6)
+	document.write("<br>")
+	document.write("<br>")
+document.write("Total marks : ")
+document.write(tot)
+	document.write("<br>")
+document.write("Average Marks Obtained : ")
+document.write(avg)
+document.bgcolor=("jeelan")
+document.fgcolor=("jameer")
+
+A = tot
+B = 359
+c = 300
+If (a>b) then
+msgbox "U Got First Class Marks",tot
+document.location.href=("smile.gif")
+else 
+msgbox "U Got Second Class Marks",tot
+document.location.href=("star.gif")
+If (a<c) then
+msgbox "U Secure Third Class Marks",tot
+document.location.href=("sad.gif")
+end if 
+end if
+</script>
+
+
+
+

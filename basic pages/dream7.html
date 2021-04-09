@@ -1,0 +1,29 @@
+<script language="VBS">
+sub btn_onclick()
+dim vd,btn,xy,jeel
+btn=isdate(dt.value)
+if btn=true then
+xy=datevalue(dt.value)
+vd=weekday(xy)
+if vd=1 then jeel = "IS Sunday"
+if vd=2 then jeel = "IS Monday"
+if vd=3 then jeel = "IS Tuesday"
+if vd=4 then jeel = "IS Wednesday"
+if vd=5 then jeel = "IS Thursday"
+if vd=6 then jeel = "IS Friday"
+if vd=7 then jeel = "IS Saturday"
+
+msgbox "Day of the day you have entered"+jeel+" ",64,"Correct date"
+else
+Msgbox "You have entered wrong value",48,"wrong date"
+end if
+end sub	</script>
+
+<body bgcolor="orange" text="green">
+Date value :<input type=text name='dt'><br>
+<input type=submit name='btn' value='Tell me the day of week'>	</body>
+
+<input type=button name='btn' value='Ok-Next' onclick=document.location.href="dream6.html">
+</body>		<br><br>
+
+<input type=text name='tot' onfocus=blur()>

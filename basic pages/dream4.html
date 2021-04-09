@@ -1,0 +1,45 @@
+<script language="VBS">
+sub colour0
+window.document.bgcolor="red"
+end sub
+sub colour1
+window.document.bgcolor="yellow"
+end sub
+sub colour2
+window.document.bgcolor="tomato"
+end sub
+sub colour3
+window.document.bgcolor="pink"
+end sub
+sub colour4
+window.document.bgcolor="blue"
+end sub
+sub colour5
+window.document.bgcolor="orange"
+end sub
+
+sub main
+select case asian.selectedIndex
+case 0
+call colour0
+case 1
+call colour1
+case 2
+call colour2
+case 3
+call colour3
+case 4
+call colour4
+case 5
+call colour5
+end select
+end sub		
+</script>
+
+<body bgcolor="aqua"><center><h1><u><b>Welcome To The Colors Of World</b></u></h1></center>
+
+Click U R Choice <select name='asian' onclick='main' size=6>
+
+<option>0	<option>1	<option>2	<option>3	<option>4	<option>5</select>
+
+<img src="wel.gif">	</body>

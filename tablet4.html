@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Your Info Mail</title>
+</head>
+<body bgcolor=#faebd7>
+<h1><center><u><font color=#1f2e3c>Your Info Mail</font></u></h1></center>
+<form action="http://www.yourinfo.cm/servlets/mail/get-info.html" method=post>
+<table align=center cellpadding=10 width=100% bgcolor=#faebd7>
+<tr>
+	<td>Name</td>
+	<td><input type=text name=id size=20></td>
+</tr>
+<tr>
+	<td>Password</td>
+	<td><input type="password" name=idno size=10></td>
+</tr>
+<tr>
+	<td>Address</td>
+	<td><textarea name=address rows=5 cols=20></textarea></td>
+</tr>
+<tr>
+	<td>Tel no</td>
+	<td><input type=text name=telno size=20></td>
+</tr>
+<tr>
+	<td>Fax</td>
+	<td><input type=text name=fax size=20></td>
+</tr>
+<tr>
+<td>sex</td>
+<td><input type=radio name=s value="male">male
+        <input type=radio name=s value="female">female
+</td>
+</tr>
+<tr>
+	<td>Country</td>
+	<td><select name="Country Names">
+	<option value="I">India</option>
+	<option value="Ar">Argentina</option>
+	<option value="Au">Australia</option>
+	<option value="Ca">Canada</option>
+	<option value="De">Denmark</option>
+	<option value="En">England</option>
+	<option value="Fr">France</option>
+	<option value="No"Norway</option>
+	</select>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<center>
+<input type=submit name=submit value=submit>
+<input type=reset name=reset value=clear>
+</form>
+</body>
+</html>

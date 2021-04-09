@@ -1,0 +1,62 @@
+<script language="VBS">
+sub fname
+if details.value = "" then
+msgbox "Enter details for clarification",0,"alert"
+end if	
+end sub
+</script>
+<script Language="VBS">
+sub jeel1
+if details1.value = "" then
+Alert "Enter address first",48,"warning"
+end if	
+end sub	
+</script>
+
+<script Language = "VBS">
+sub application
+dim list(3)
+list(0) = "1,000"
+list(1) = "1,200"
+list(2) = "1,500"
+list(3) = "2,000"
+
+if coursename.selectedIndex=0 then
+	fee.value = list(0)
+else
+if coursename.selectedIndex=1 then
+	fee.value = list(1)
+else
+if coursename.selectedIndex=2 then
+	fee.value = list(2)
+else
+if coursename.selectedIndex=3 then
+	fee.value = list(3)
+end if	
+end if 	
+end if	
+end if	
+end sub	 
+</script><script language="VBS">
+sub getdate
+dt.value=date
+end sub
+</script>
+
+<body bgcolor="jeelan" onload="getdate">
+			<b><center>CRUISE</b></center>
+<table border=1>
+<tr><td><b>NAME<td><input type=text name='details' onblur='fname'>	<br>
+<tr><td><b>Address<td><Textarea  name='details1' onblur='jeel1' size=30 rows=3> </textarea>
+<input type=button name=dt>
+<tr><td><b>Course Selected<td><select name='coursename' onchange='application'>  <option> <option><b>Ms-office<option><b>DTP	<option><b>DCA</select>
+<tr><td><b>Fee<td> <input type=text name='fee' onchange='coursename'>
+
+<tr><td><form method='post' action="">	<input type=submit value='send'>&nbsp;&nbsp;
+<input type=button name='btn' value='ok' onclick=window.confirm>
+
+</form>
+</table>
+</body>
+
+
